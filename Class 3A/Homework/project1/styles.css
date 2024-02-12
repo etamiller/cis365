@@ -1,1 +1,104 @@
-/* Add your CSS style definitions to this file */
+/*
+Eta Miller
+HTML_HW_3A
+*/
+html{
+    font-family: 'Open Sans';
+    font-size: 0.9rem;
+    background-color: #f9f9f9;
+}
+
+body{
+    margin-top: 0em;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-bottom: 0em;
+    font-family: 'Open Sans';
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: white;
+}
+
+img{
+   width: 100%; 
+}
+
+h1{
+    font-family: 'Roboto Slab';
+    font-size: 2rem;
+    color: #9f2042;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+p{
+    text-align: left;
+}
+
+#details{
+    color: #a9a9ba;
+}
+
+blockquote{
+    font-family: 'Roboto Slab';
+    font-size: 1.25rem;
+    background-color: #f9f9f9;
+    color: black;
+    padding: 20px;
+    text-align: left;
+    border: 1px solid #ececec;
+}
+
+#buttons{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#buttons a{
+    padding: 10px;
+    color:#ec8295;
+}
+
+#buttons a:link{
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#buttons a:visited{
+    border: 1px solid #ececec;
+    text-decoration: none;
+}
+
+#buttons a:hover{
+    background-color: #a9a9ba;
+    color: #9f2042;
+}
+
+footer{
+    background-color: #29293a;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+footer p:first-child{
+    color: white;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+footer p:nth-child(2){
+    color: white;
+    padding-left: 30px;
+    padding-bottom: 30px;
+} 
+
+footer p:nth-child(2) a{
+    color: #9f2042;
+    text-decoration: none;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
