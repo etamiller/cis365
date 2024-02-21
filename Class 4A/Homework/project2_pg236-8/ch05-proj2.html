@@ -8,18 +8,132 @@
    <link rel="stylesheet" href="ch05-proj2.css" />
 </head>
 <body>
-<form >
+<form method="get" action="https://www.randyconnolly.com/tests/process.php">
 <fieldset>
    <legend>Advanced Art Work Search</legend>
    
     <div id="searchBox">
-     
+         <input type="search" name="painting" placeholder="Search">
+         <label>Subject</label>
+         <input type="radio" name="type" value="History"/>History
+         <input type="radio" name="type" value="Person"/>Person
+         <input type="radio" name="type" value="Landscape"/>Landscape
+         <select>
+             <option value="0">Select Genre</option>
+             <option value="1">Baroque</option>
+             <option value="2">Renaissance</option>
+             <option value="3">Realism</option>
+         </select>
+         <button type="submit" id="filter">Filter</button>
     </div>   
     <div id="settingsBox">
-
-
+         <p>
+            <select>
+            <option value="0">Bulk Actions</option>
+            <option value="1">Archive</option>
+            <option value="2">Edit</option>
+            <option value="3">Delete</option>
+            <option value="4">Collection</option>
+            </select>
+            <button type="submit" id="filter">Apply To All</button>
+         </p>
     </div>
     <div id="paintingBox">
+         <table id="paintings">
+            <thead>
+               <tr>
+                  <th colspan="5">
+                  <h3>Paintings</h3></tr>
+                  </th>
+               </tr>
+               <tr>
+                  <th>Title</th>
+                  <th>Artist</th>
+                  <th>Year</th>
+                  <th>Genre</th>
+                  <th>Actions</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td class="first">
+                     <input type="checkbox" name="index[]" value="1">
+                     <img src="images/125010.jpg">
+                     Portrait of Alida Christina Assink
+                  </td>
+                  <td>Kruseman, Jan</td>
+                  <td>1833</td>
+                  <td>Realism</td>
+                  <td>
+                     <button type="button" id="edit"><img src="images/edit.png" alt=""></button>
+                     <button type="button"><img src="images/archive.png" alt=""></button>
+                     <button type="button"><img src="images/delete.png" alt=""></button>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="first">
+                     <input type="checkbox" name="index[]" value="2">
+                     <img src="images/125020.jpg">
+                     Portrait of William II, King of the Netherlands
+                  </td>
+                  <td>Kruseman, Jan</td>
+                  <td>1839</td>
+                  <td>Realism</td>
+                  <td>
+                     <button type="button" id="edit"><img src="images/edit.png" alt=""></button>
+                     <button type="button"><img src="images/archive.png" alt=""></button>
+                     <button type="button"><img src="images/delete.png" alt=""></button>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="first">
+                     <input type="checkbox" name="index[]" value="2">
+                     <img src="images/130020.jpg">
+                     Three girls from the Amsterdam Orphanage
+                  </td>
+                  <td>Schwartze, Thérèse</td>
+                  <td>1885</td>
+                  <td>Realism</td>
+                  <td>
+                     <button type="button" id="edit"><img src="images/edit.png" alt=""></button>
+                     <button type="button"><img src="images/archive.png" alt=""></button>
+                     <button type="button"><img src="images/delete.png" alt=""></button>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="first">
+                     <input type="checkbox" name="index[]" value="2">
+                     <img src="images/127010.jpg">
+                     The Windmill at Wijk bij Duurstede
+                  </td>
+                  <td>Ruisdael, Jacob van</td>
+                  <td>1670</td>
+                  <td>Dutch Golden Age</td>
+                  <td>
+                     <button type="button" id="edit"><img src="images/edit.png" alt=""></button>
+                     <button type="button"><img src="images/archive.png" alt=""></button>
+                     <button type="button"><img src="images/delete.png" alt=""></button>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="first">
+                     <input type="checkbox" name="index[]" value="2">
+                     <img src="images/128010.jpg">
+                     Morning Ride Along the Beach
+                  </td>
+                  <td>Mauve, Anton</td>
+                  <td>1871</td>
+                  <td>Realism</td>
+                  <td>
+                     <button type="button" id="edit"><img src="images/edit.png" alt=""></button>
+                     <button type="button"><img src="images/archive.png" alt=""></button>
+                     <button type="button"><img src="images/delete.png" alt=""></button>
+                  </td>
+               </tr>
+            </tbody>
+
+            
+         </table>
 
     </div> 
 </fieldset>  
