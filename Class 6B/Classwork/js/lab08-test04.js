@@ -1,35 +1,47 @@
+// Create a new variable named countries whose value is an array returned 
+// from the split() function. Pass the supplied csv variable as an argument to 
+// split().// 
 
-// convert comma-separated values into an array
+const countries = csv.split(",");
+console.log(countries);
 
+// Convert the countries array into the delimited string using join().
+countries.join();
+console.log(countries);
 
-// convert array into delimited string
+// •  Output if csv and countries are arrays using isArray().
+console.log(Array.isArray(countries));
+console.log(Array.isArray(csv));
 
+// •  Sort the countries array using sort().
+countries.sort();
+console.log(countries);
 
-// check if these are arrays
+// •  Reverse the sort using reverse().
+countries.reverse();
+console.log(countries);
 
+// •  Remove the first element in countries using shift().
+countries.shift();
+console.log(countries);
 
-//  sort a simple array 
+// •  Remove the last element in countries using pop().
+countries.pop();
+console.log(countries);
 
+// •  Add two new elements to the front of the array using unshift().
+countries.unshift("Panama", "The Bahamas");
+console.log(countries);
 
-// reverse the sort
+// •  Search for the country named Germany using includes().
+console.log(countries.includes("Germany"));
 
+// •  Find the index for the country named Germany using indexOf().
+console.log(countries.indexOf("Germany"))
 
-// remove the first element
-
-
-// remove the last element
-
-
-// add new elements to the front of the array
-
-
-// search for element
-
-
-// search for element index
-
-
-// make a new array by extracting from another array
+// •  Make a new array by extracting from the countries array using splice()
+newArray = countries.splice(0);
+console.log(newArray);
 
 
 console.log('---------------------');
@@ -38,12 +50,20 @@ console.log('---------------------');
 
 
 // use a loop to output all cities whose continent=="NA"
-
+for (let c of cities)
+{
+   if (c.continent == "NA")
+      console.log(c);
+}
 
 console.log('---------------------');
 
 // use a loop to output gallery names whose country=="USA"
-
+for (let g of galleries)
+{
+   if (g.location.country == "USA")
+      console.log(g.name);
+}
 
 console.log('---------------------');
 
@@ -51,12 +71,20 @@ console.log('---------------------');
 const colors = JSON.parse(colorsAsString);
 
 // use a loop to output color name if luminance < 75
-
+for (let c of colors)
+{
+   if (c.luminance < 75)
+      console.log(c.name);
+}
 
 console.log('---------------------');
 
 // use two nested loops - outer: loop thru colors
-
+// for (let c of colors) {
+//    let sum = 0;
+//    for (let rgb of c.rgb) sum += rgb;
+//    console.log(`${c.name} rgb=${sum}`);
+// }
 
 console.log('---------------------');
 
@@ -64,6 +92,13 @@ console.log('---------------------');
    list of links to the galleries in the galleries array.
    Make the label of the link the name property, and the href
    the url property */
+
+//how to print html onto javascript page
+document.write(`<h2>Hello World</h2>`);
+
+document.write(`<ul>`)
+const firstItem = 'First Item';
+
 
 
 
