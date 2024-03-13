@@ -2,7 +2,7 @@
 document.getElementById('thumb-list').style.border = "solid 1px #CCCCCC";
 
 // document.querySelector('#msg').value = 'Hello';
-document.getElementById('thumb-list').classList;
+// document.getElementById('thumb-list').classList;
 document.querySelector('#msg').value = document.querySelector('.box fieldset p').textContent;
 
 const images = document.querySelectorAll('#thumb-list img');
