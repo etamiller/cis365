@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", function() {
 
    const countryAPI = 'https://www.randyconnolly.com/funwebdev/3rd/api/travel/countries.php';
