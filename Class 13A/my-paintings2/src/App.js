@@ -1,5 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState, useEffect } from 'react';
+import header from './Components/header.js';
+import paintingListItem from './Components/paintingListItem.js';
+import paintingList from './Components/paintingList.js';
+import editPaintingForm from './Components/editPaintingForm.js';
 
 function App() {
   // return (
@@ -31,11 +36,11 @@ function App() {
        {id: "017080", title: "The Bridge at Argenteuil", artist: "Claude Monet", year: 1874}
     ];
  
-    const [paintings,setPaintings] = React.useState(data)
+    const [paintings,setPaintings] = useState(data)
     //this array = destructured array
     //painting = variable thats holds state
     //setPaintings = callback method - sets the state
-    const[currentPainting,setCurrentPainting] = React.useState(data[0]);
+    const[currentPainting,setCurrentPainting] = useState(data[0]);
  
     const handleChange = (updatedPainting) => {
        setCurrentPainting(updatedPainting);
